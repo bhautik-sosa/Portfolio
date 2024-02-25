@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: -20px;
+    background-color: rgb(1, 0, 7);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(12, 12, 40);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style : none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color:rgb(133, 101, 167);
+    font-size: 1.04rem;
+}
+
+.left{
+    font-size: 1.6rem;
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstsection > div{
+    width: 36%;
+}
+
+.leftsection{
+    font-size: 3rem;
+}
+.rightsection img{
+    width: 80%;
+    margin: 50px 0;
+}
+
+.purple{
+    background: linear-gradient(to right, #d69533, #5050f8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#element{
+    background: linear-gradient(to right, #d69533, #5050f8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.secondsection{
+    max-width: 80vw;
+    margin: 0px auto ;
+    height: 80vh;
+}
+.secondsection h1{
+    font-size: 1.9rem;
+}
+main hr{
+    border: 0;
+    background:  #9c97f1;
+    height: 1.2px;
+    margin: 40px;
+
+}
+
+.text-grey{
+    color: grey;
+}
+
+.secondsection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 7vw;
+}
+
+.image-top{
+    position: relative;
+    width: 35px;
+    top: -42px;
+    left: -11px;
+}
+
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    width: 150px;
+    color: grey;
+    font-size: 10px;
+}
+footer{
+    background-color: rgb(5, 5, 17);
+    /* height: 170px; */
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer .second ul{
+    list-style: none;
+}
+.footer .second ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer .third ul{
+    list-style: none;
+}
+.footer .third ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-rights{
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.leftsection .btn{
+    text-decoration: none;
+    padding: 12px;
+    background-color: rgb(58, 48, 136);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.leftsection .btn:hover{
+    font-size: 20.5px;
+    background-color: white;
+    color: rgb(58, 48, 136);
+    border-color: rgb(58, 48, 136);
+}
+@media screen and (max-width: 1400px) {
+    body{
+        min-width: fit-content;
+        /* background-color: red; */
+    }
+    .box{
+        flex-direction: column;
+    }
+    .firstsection{
+        flex-direction: column-reverse;
+    }
+    .secondsection{
+        display: flex;
+        flex-direction: column;;
+        align-items: center;
+        height: 100vh;
+    }
+    .secondsection .vertical{
+        height: unset;
+    }
+    .secondsection .box{
+        width: 50vw;
+    }
+    .vertical-title , .vertical-desc{
+        left: 45px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+    .leftsection{
+        width: 100% !important;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightsection{
+        width: 650px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .rightsection img{
+        width: 45vw;
+    }
+    .image-top{
+        top: 110px;
+    }
+   
+}
